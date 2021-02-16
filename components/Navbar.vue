@@ -38,7 +38,11 @@
       <v-container>
         <v-row class="d-flex align-center">
           <v-col class="col-6 px-0">
-            <v-toolbar-title v-text="title" />
+            <nuxt-link to="/">
+              <strong>
+                <v-toolbar-title v-text="title" />
+              </strong>
+            </nuxt-link>
           </v-col>
           <v-col class="col-6 text-right px-0">
             <v-btn icon @click.stop="drawer = !drawer" class="text-right">

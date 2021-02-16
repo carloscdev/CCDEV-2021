@@ -40,6 +40,9 @@ h2 {
     height: 10px;
   }
 }
+a {
+  text-decoration: none;
+}
 .container {
   @media (max-width: 1055px) {
     width: 80% !important;
