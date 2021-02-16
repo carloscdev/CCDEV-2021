@@ -10,7 +10,7 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: "server",
+  target: "static",
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -53,8 +53,30 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "nuxt-i18n"
   ],
+  i18n: {
+    locales: ["en", "es"],
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: {
+        en: {
+          message: {
+            des:
+              "Here's a selection of hand-picked projects from over a decade of creating amazing work with amazing companies."
+          }
+        },
+        es: {
+          message: {
+            des:
+              "Aquí hay una selección de proyectos cuidadosamente seleccionados de más de una década de creación de trabajos increíbles con compañías increíbles."
+          }
+        }
+      }
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

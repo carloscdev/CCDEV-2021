@@ -4,13 +4,15 @@
       <v-col class="col-sm-6 col-md-8">
         <h1 style="font-size: 3.5rem">CARLOS CÓRDOVA</h1>
         <span class="text--secondary my-3 d-block">
-          Here's a selection of hand-picked projects from over a decade of
-          creating amazing work with amazing companies.</span
+          {{ $t("message.des") }}</span
         >
         <br />
-        <v-btn outlined color="primary">
+        <!-- <v-btn outlined color="primary">
           View Posts
-        </v-btn>
+        </v-btn> -->
+        <br />
+        <nuxt-link :to="switchLocalePath('en')">English</nuxt-link> <br />
+        <nuxt-link :to="switchLocalePath('es')">Español</nuxt-link>
       </v-col>
       <v-col class="col-6 col-md-4"> </v-col>
     </v-row>
